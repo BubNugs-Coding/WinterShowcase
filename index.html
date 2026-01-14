@@ -7,7 +7,7 @@
     <title>Winter Midterm Showcase — Interactive README</title>
     <meta
       name="description"
-      content="An interactive README-style showcase featuring SantaSurvival, a PixInsight LRGB Processing Wizard script, and a N.I.N.A. observatory automation milestone timeline."
+      content="An interactive README-style showcase featuring SantaSurvival, PixInsightScripts-BubNugs, 3DWizard, and a N.I.N.A. observatory automation milestone timeline."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +33,7 @@
         <nav class="nav" aria-label="Primary">
           <a class="navLink" href="#santa">SantaSurvival</a>
           <a class="navLink" href="#pixinsight">PixInsight</a>
+          <a class="navLink" href="#3dwizard">3DWizard</a>
           <a class="navLink" href="#observatory">Observatory / N.I.N.A.</a>
         </nav>
 
@@ -56,8 +57,8 @@
           <div class="heroText">
             <h1 class="h1">An advanced, interactive README — on GitHub Pages</h1>
             <p class="lead">
-              This site showcases two projects (<span class="mono">SantaSurvival</span> and
-              <span class="mono">PixInsightScripts-BubNugs</span>) and a real milestone from my work
+              This site showcases three projects (<span class="mono">SantaSurvival</span>,
+              <span class="mono">PixInsightScripts-BubNugs</span>, and <span class="mono">3DWizard</span>) and a real milestone from my work
               connecting <span class="mono">N.I.N.A.</span> to the Pomfret Observatory—now moving
               toward automated remote operation.
             </p>
@@ -66,6 +67,7 @@
               <button class="chip isActive" type="button" data-filter="all">All</button>
               <button class="chip" type="button" data-filter="game">Game</button>
               <button class="chip" type="button" data-filter="scripting">Scripting</button>
+              <button class="chip" type="button" data-filter="webapp">Web App</button>
               <button class="chip" type="button" data-filter="observatory">Observatory</button>
             </div>
 
@@ -116,6 +118,17 @@
                   Repo
                 </a>
                 <a class="miniLink" href="#pixinsight">Details</a>
+              </div>
+            </article>
+
+            <article class="miniCard" data-tags="webapp">
+              <div class="miniTitle">3DWizard</div>
+              <div class="miniDesc">A client-side toolkit for 3D printing/model inspection utilities.</div>
+              <div class="miniLinks">
+                <a class="miniLink" href="https://github.com/BubNugs-Coding/3DWizard" target="_blank" rel="noreferrer">
+                  Repo
+                </a>
+                <a class="miniLink" href="#3dwizard">Details</a>
               </div>
             </article>
 
@@ -173,6 +186,17 @@
           >
             <img src="./assets/observatory-nina.svg" alt="Observatory and N.I.N.A. placeholder image" />
             <span class="galleryLabel">Observatory / N.I.N.A.</span>
+          </button>
+
+          <button
+            class="galleryItem"
+            type="button"
+            role="listitem"
+            data-full="./assets/3dwizard.svg"
+            data-caption="3DWizard — client-side 3D printing/model toolkit"
+          >
+            <img src="./assets/3dwizard.svg" alt="3DWizard placeholder image" />
+            <span class="galleryLabel">3DWizard</span>
           </button>
         </div>
       </section>
@@ -363,6 +387,83 @@
         </div>
       </section>
 
+      <section class="container section anchorTarget" id="3dwizard" data-tags="webapp" aria-label="3DWizard">
+        <div class="sectionHead">
+          <h2 class="h2">3DWizard</h2>
+          <div class="sectionActions">
+            <a class="btn small" href="https://github.com/BubNugs-Coding/3DWizard" target="_blank" rel="noreferrer">
+              GitHub repo
+            </a>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="h3">What it is</h3>
+            <p>
+              A static, client-side web app for 3D printing/model utilities. The goal is to provide
+              pre-slicer inspection and helpers—everything runs in the browser (no backend).
+            </p>
+
+            <ul class="bullet">
+              <li><strong>In-browser processing</strong>: no uploads, no server-side compute.</li>
+              <li><strong>Toolbox mindset</strong>: focused utilities instead of a single feature.</li>
+              <li><strong>Modern stack</strong>: Vite + React + TypeScript.</li>
+            </ul>
+
+            <details class="accordion">
+              <summary>Highlighted tool ideas</summary>
+              <div class="accordionBody">
+                <ul class="bullet">
+                  <li><strong>Mesh viewer/inspector</strong>: preview, stats, wireframe toggles.</li>
+                  <li><strong>Sanity checks</strong>: non-manifold edges, flipped normals, open boundaries.</li>
+                  <li><strong>Repair/cleanup</strong>: common “one click” fixes and optimizations.</li>
+                  <li><strong>Conversions</strong>: STL/OBJ/GLTF (limitations noted in the repo).</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <h3 class="h3">How to run</h3>
+            <details class="accordion" open>
+              <summary>Development</summary>
+              <div class="accordionBody">
+                <ol class="steps">
+                  <li><code>npm install</code></li>
+                  <li><code>npm run dev</code></li>
+                </ol>
+              </div>
+            </details>
+
+            <details class="accordion">
+              <summary>Build for production</summary>
+              <div class="accordionBody">
+                <ol class="steps">
+                  <li><code>npm run build</code></li>
+                  <li>Deploy the generated <code>dist</code> output.</li>
+                </ol>
+                <p class="muted">
+                  For GitHub Pages deployments, the repo’s docs mention setting the Vite base path
+                  to the repo name if needed.
+                </p>
+              </div>
+            </details>
+
+            <details class="accordion">
+              <summary>Why it matters (midterm angle)</summary>
+              <div class="accordionBody">
+                <ul class="bullet">
+                  <li><strong>UX</strong>: complex tools presented in a clear, approachable UI.</li>
+                  <li><strong>Performance</strong>: non-trivial client-side processing constraints.</li>
+                  <li><strong>Engineering scope</strong>: multiple tools, shared infrastructure, consistent patterns.</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+
       <section
         class="container section anchorTarget"
         id="observatory"
@@ -510,6 +611,10 @@
             rel="noreferrer"
           >
             <div class="linkTitle">PixInsightScripts-BubNugs</div>
+            <div class="linkMeta">GitHub repo</div>
+          </a>
+          <a class="linkCard" href="https://github.com/BubNugs-Coding/3DWizard" target="_blank" rel="noreferrer">
+            <div class="linkTitle">3DWizard</div>
             <div class="linkMeta">GitHub repo</div>
           </a>
           <a class="linkCard" href="https://github.com/BubNugs-Coding/WinterShowcase" target="_blank" rel="noreferrer">
