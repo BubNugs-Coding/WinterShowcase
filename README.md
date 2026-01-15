@@ -1,4 +1,4 @@
-# Winter Midterm Showcase (GitHub Pages)
+# Winter Showcase (GitHub Pages)
 
 This folder contains a **plain static GitHub Pages site** (an interactive “README-style” webpage).
 
