@@ -621,6 +621,55 @@ code,
   .linkGrid {
     grid-template-columns: 1fr;
   }
+  .gameGallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallerySection {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.gallerySection .h3 {
+  margin-bottom: 20px;
+}
+
+.gameGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gameScreenshot {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+  border-radius: var(--radiusSm);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gameScreenshot:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.gameScreenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.gameScreenshot figcaption {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 
