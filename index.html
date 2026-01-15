@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="color-scheme" content="dark light" />
-    <title>Winter Showcase — Interactive README</title>
+    <title>Project Showcase</title>
     <meta
       name="description"
-      content="An interactive README-style showcase featuring SantaSurvival, PixInsightScripts-BubNugs, 3DWizard, and a N.I.N.A. observatory automation milestone timeline."
+      content="A showcase of programming projects: SantaSurvival (Phaser game), LRGB Wizard (PixInsight script), 3DWizard (3D printing toolkit), and Observatory Automation (N.I.N.A. integration)."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,8 +25,8 @@
         <div class="brand">
           <div class="brandMark" aria-hidden="true">WB</div>
           <div class="brandText">
-            <div class="brandTitle">Winter Showcase</div>
-            <div class="brandSub">Interactive README · GitHub Pages</div>
+            <div class="brandTitle">Project Showcase</div>
+            <div class="brandSub">GitHub Pages</div>
           </div>
         </div>
 
@@ -55,12 +55,12 @@
       <section class="hero" aria-label="Intro">
         <div class="container heroGrid">
           <div class="heroText">
-            <h1 class="h1">An advanced, interactive README — on GitHub Pages</h1>
+            <h1 class="h1">Project Showcase</h1>
             <p class="lead">
-              This site showcases three projects (<span class="mono">SantaSurvival</span>,
-              <span class="mono">PixInsightScripts-BubNugs</span>, and <span class="mono">3DWizard</span>) and a real milestone from my work
-              connecting <span class="mono">N.I.N.A.</span> to the Pomfret Observatory—now moving
-              toward automated remote operation.
+              A collection of my projects: a Phaser web game (<span class="mono">SantaSurvival</span>),
+              a PixInsight automation script (<span class="mono">LRGB Wizard</span>), 
+              a 3D printing toolkit (<span class="mono">3DWizard</span>), and ongoing work
+              automating the Pomfret Observatory with <span class="mono">N.I.N.A.</span>
             </p>
 
             <div class="chipRow" aria-label="Highlights filter">
@@ -72,19 +72,19 @@
             </div>
 
             <div class="ctaRow">
-              <a class="btn primary" href="#santa">Explore the showcase</a>
+              <a class="btn primary" href="#santa">View projects</a>
               <a
                 class="btn"
-                href="https://github.com/BubNugs-Coding/WinterShowcase"
+                href="https://github.com/BubNugs-Coding"
                 target="_blank"
                 rel="noreferrer"
               >
-                View showcase repo
+                GitHub profile
               </a>
             </div>
 
             <p class="metaNote">
-              Tip: Use <span class="kbd">Expand all</span> to scan fast, or click images to zoom.
+              Tip: Use <span class="kbd">Expand all</span> to view all details at once.
             </p>
           </div>
 
@@ -145,62 +145,6 @@
         </div>
       </section>
 
-      <section class="container section" id="gallery" aria-label="Gallery">
-        <div class="sectionHead">
-          <h2 class="h2">Gallery</h2>
-          <p class="sub">
-            Click an image to zoom. These are SVG placeholders you can swap for screenshots/GIFs
-            later.
-          </p>
-        </div>
-
-        <div class="gallery" role="list">
-          <button
-            class="galleryItem"
-            type="button"
-            role="listitem"
-            data-full="./assets/santa-survival.svg"
-            data-caption="SantaSurvival — side-scrolling gameplay concept"
-          >
-            <img src="./assets/santa-survival.svg" alt="SantaSurvival placeholder image" />
-            <span class="galleryLabel">SantaSurvival</span>
-          </button>
-
-          <button
-            class="galleryItem"
-            type="button"
-            role="listitem"
-            data-full="./assets/lrgb-wizard.svg"
-            data-caption="PixInsight LRGB Processing Wizard — workflow steps"
-          >
-            <img src="./assets/lrgb-wizard.svg" alt="LRGB Processing Wizard placeholder image" />
-            <span class="galleryLabel">PixInsight Wizard</span>
-          </button>
-
-          <button
-            class="galleryItem"
-            type="button"
-            role="listitem"
-            data-full="./assets/observatory-nina.svg"
-            data-caption="Pomfret Observatory + N.I.N.A. — connection and automation roadmap"
-          >
-            <img src="./assets/observatory-nina.svg" alt="Observatory and N.I.N.A. placeholder image" />
-            <span class="galleryLabel">Observatory / N.I.N.A.</span>
-          </button>
-
-          <button
-            class="galleryItem"
-            type="button"
-            role="listitem"
-            data-full="./assets/3dwizard.svg"
-            data-caption="3DWizard — client-side 3D printing/model toolkit"
-          >
-            <img src="./assets/3dwizard.svg" alt="3DWizard placeholder image" />
-            <span class="galleryLabel">3DWizard</span>
-          </button>
-        </div>
-      </section>
-
       <section class="container section anchorTarget" id="santa" data-tags="game" aria-label="SantaSurvival">
         <div class="sectionHead">
           <h2 class="h2">SantaSurvival</h2>
@@ -218,73 +162,43 @@
 
         <div class="grid2">
           <article class="card">
-            <h3 class="h3">What it is</h3>
+            <h3 class="h3">Overview</h3>
             <p>
-              A side-scrolling web game where you control Santa to deliver presents while dodging
-              missiles. Built on Phaser 3 and served as a static site (dev uses a simple HTTP server).
+              A side-scrolling web game where you control Santa delivering presents while dodging
+              missiles. Built with Phaser 3 as a static site with optional Firebase leaderboard.
             </p>
 
             <ul class="bullet">
-              <li><strong>Core loop</strong>: deliver presents → score climbs → survive threats.</li>
-              <li><strong>Input</strong>: mouse movement controls Santa’s vertical position.</li>
-              <li><strong>Leaderboard</strong>: optional Firebase name-only score submission.</li>
+              <li><strong>Core gameplay</strong>: Deliver presents to houses, avoid missiles, survive as long as possible.</li>
+              <li><strong>Controls</strong>: Mouse movement controls Santa's vertical position.</li>
+              <li><strong>Leaderboard</strong>: Optional Firebase integration for name-only score tracking.</li>
             </ul>
-
-            <details class="accordion">
-              <summary>How to run locally</summary>
-              <div class="accordionBody">
-                <ol class="steps">
-                  <li>Install dependencies: <code>npm install</code></li>
-                  <li>Start server: <code>npm start</code> (serves on <code>http://localhost:8080</code>)</li>
-                  <li>Open the URL in your browser.</li>
-                </ol>
-                <p class="muted">
-                  The game loads Phaser via CDN and runs <code>src/main.js</code> as an ES module.
-                </p>
-              </div>
-            </details>
-
-            <details class="accordion">
-              <summary>Leaderboard setup (optional)</summary>
-              <div class="accordionBody">
-                <p>
-                  The project supports a lightweight Firestore leaderboard (no accounts). It’s meant
-                  for fun, not anti-cheat.
-                </p>
-                <ol class="steps">
-                  <li>Create a Firebase project + Web App.</li>
-                  <li>Enable Firestore.</li>
-                  <li>Paste Firestore rules from the repo’s setup doc.</li>
-                  <li>Add your Web App config to <code>src/services/firebaseConfig.js</code>.</li>
-                </ol>
-              </div>
-            </details>
           </article>
 
           <article class="card">
-            <h3 class="h3">Tech & structure</h3>
+            <h3 class="h3">Tech stack</h3>
             <div class="keyValue">
               <div class="k">Engine</div>
               <div class="v">Phaser 3</div>
               <div class="k">Frontend</div>
               <div class="v">Vanilla JS modules</div>
-              <div class="k">Server</div>
-              <div class="v">Static HTTP server (dev: <code>http-server</code>)</div>
               <div class="k">Persistence</div>
               <div class="v">Firebase Firestore (optional)</div>
             </div>
 
             <details class="accordion">
-              <summary>Controls & gameplay notes</summary>
+              <summary>Setup instructions</summary>
               <div class="accordionBody">
-                <ul class="bullet">
-                  <li><strong>Move</strong>: move mouse up/down to control Santa’s Y position.</li>
-                  <li><strong>Goal</strong>: fly over houses to deliver presents and score points.</li>
-                  <li><strong>Threat</strong>: avoid missiles (3 lives).</li>
-                </ul>
+                <ol class="steps">
+                  <li><code>npm install</code></li>
+                  <li><code>npm start</code> (serves on <code>http://localhost:8080</code>)</li>
+                  <li>Open in browser and play!</li>
+                </ol>
+                <p class="muted">
+                  For leaderboard: Create Firebase project, enable Firestore, and add config to <code>src/services/firebaseConfig.js</code>.
+                </p>
               </div>
             </details>
-
           </article>
         </div>
 
@@ -329,66 +243,53 @@
 
         <div class="grid2">
           <article class="card">
-            <h3 class="h3">What it is</h3>
+            <h3 class="h3">Overview</h3>
             <p>
-              A PixInsight PJSR script that acts like a guided wizard for processing linear LRGB
-              master frames. It expects four open images named exactly <code>L</code>, <code>R</code>,
-              <code>G</code>, <code>B</code>.
+              A PixInsight script that guides you through processing linear LRGB astrophotography data.
+              Expects four open images named <code>L</code>, <code>R</code>, <code>G</code>, <code>B</code>.
             </p>
 
-            <details class="accordion" open>
-              <summary>Install & run (quickstart)</summary>
-              <div class="accordionBody">
-                <ol class="steps">
-                  <li>Copy <code>LRGB_Wizard.js</code> into your PixInsight scripts directory.</li>
-                  <li>Refresh scripts (or restart PixInsight).</li>
-                  <li>Open your masters named <code>L</code>, <code>R</code>, <code>G</code>, <code>B</code>.</li>
-                  <li>Run: <span class="mono">Script → LRGB Processing Wizard</span>.</li>
-                </ol>
-              </div>
-            </details>
+            <ul class="bullet">
+              <li><strong>Guided workflow</strong>: Step-by-step dialogs explain each processing stage.</li>
+              <li><strong>Consistency</strong>: Apply the same settings (crop, calibration) across all channels.</li>
+              <li><strong>Automation</strong>: Removes guesswork from the linear-to-stretched LRGB pipeline.</li>
+            </ul>
 
             <details class="accordion">
-              <summary>Workflow steps (expand for the full list)</summary>
+              <summary>Workflow steps</summary>
               <div class="accordionBody">
                 <ul class="bullet">
-                  <li><strong>Pre-flight</strong>: checks required images and sets reference.</li>
-                  <li><strong>DynamicCrop</strong>: manual crop on L, then apply to R/G/B.</li>
-                  <li><strong>AutoDBE</strong>: automatic gradient removal.</li>
-                  <li><strong>PCC</strong>: photometric color calibration.</li>
-                  <li><strong>STF → HT</strong>: convert auto-stretch into histogram transform.</li>
-                  <li><strong>LRGBCombination</strong>: merge L into RGB with adjustable weights.</li>
-                  <li><strong>SCNR</strong>: remove green cast.</li>
-                  <li><strong>Histogram/Curves</strong>: black point + contrast/saturation.</li>
-                  <li><strong>LHE / Star reduction / HDRMT</strong>: detail + star control.</li>
-                  <li><strong>Export</strong>: final save + optional JPG/TIFF exports.</li>
+                  <li><strong>Pre-flight</strong>: Image validation and reference setup</li>
+                  <li><strong>DynamicCrop</strong>: Crop L, then apply to RGB</li>
+                  <li><strong>AutoDBE</strong>: Gradient removal</li>
+                  <li><strong>PCC</strong>: Color calibration</li>
+                  <li><strong>STF → HT</strong>: Auto-stretch to histogram transform</li>
+                  <li><strong>LRGBCombination</strong>: Merge luminance with color</li>
+                  <li><strong>SCNR</strong>: Green cast removal</li>
+                  <li><strong>Curves/Histogram</strong>: Contrast and saturation</li>
+                  <li><strong>Detail enhancement</strong>: LHE, star reduction, HDRMT</li>
+                  <li><strong>Export</strong>: Save final image</li>
                 </ul>
               </div>
             </details>
           </article>
 
           <article class="card">
-            <h3 class="h3">Why a wizard?</h3>
+            <h3 class="h3">Why it's useful</h3>
             <p>
-              PixInsight has powerful tools, but a repeatable workflow can be hard to remember.
-              This script makes the pipeline concrete and teachable: one step at a time, with clear
-              expectations and optional skipping.
+              PixInsight is powerful but overwhelming. This script provides a concrete, teachable workflow
+              that reduces the "blank page" problem when processing astrophotography data.
             </p>
 
-            <ul class="bullet">
-              <li><strong>Guided UX</strong>: dialogs explain what to do and what “good” looks like.</li>
-              <li><strong>Consistency</strong>: applies the same crop/choices across channels.</li>
-              <li><strong>Practical automation</strong>: reduces the “blank page” feeling in processing.</li>
-            </ul>
-
             <details class="accordion">
-              <summary>How it works (high-level)</summary>
+              <summary>Setup instructions</summary>
               <div class="accordionBody">
-                <ul class="bullet">
-                  <li><strong>Pre-flight scan</strong>: walks open PixInsight windows and matches IDs.</li>
-                  <li><strong>Stateful pipeline</strong>: stores view/image refs for later steps.</li>
-                  <li><strong>Non-modal steps</strong>: lets you interact with the image while dialogs are open.</li>
-                </ul>
+                <ol class="steps">
+                  <li>Copy <code>LRGB_Wizard.js</code> to your PixInsight scripts directory</li>
+                  <li>Refresh scripts or restart PixInsight</li>
+                  <li>Open your master frames named <code>L</code>, <code>R</code>, <code>G</code>, <code>B</code></li>
+                  <li>Run: <span class="mono">Script → LRGB Processing Wizard</span></li>
+                </ol>
               </div>
             </details>
           </article>
@@ -421,57 +322,59 @@
 
         <div class="grid2">
           <article class="card">
-            <h3 class="h3">What it is</h3>
+            <h3 class="h3">Overview</h3>
             <p>
-              A static, client-side web app for 3D printing/model utilities. The goal is to provide
-              pre-slicer inspection and helpers—everything runs in the browser (no backend).
+              A client-side web toolkit for 3D printing utilities—mesh inspection, repair,
+              conversion, and optimization. Everything runs in your browser, no uploads required.
             </p>
 
             <ul class="bullet">
-              <li><strong>In-browser processing</strong>: no uploads, no server-side compute.</li>
-              <li><strong>Toolbox mindset</strong>: focused utilities instead of a single feature.</li>
-              <li><strong>Modern stack</strong>: Vite + React + TypeScript.</li>
+              <li><strong>Privacy-first</strong>: All processing happens locally in the browser.</li>
+              <li><strong>Multiple tools</strong>: Viewer, sanity checker, repair, converter, measurement tools.</li>
+              <li><strong>Modern stack</strong>: Vite + React + TypeScript + Three.js.</li>
             </ul>
 
             <details class="accordion">
-              <summary>Highlighted tool ideas</summary>
+              <summary>Available tools</summary>
               <div class="accordionBody">
                 <ul class="bullet">
-                  <li><strong>Mesh viewer/inspector</strong>: preview, stats, wireframe toggles.</li>
-                  <li><strong>Sanity checks</strong>: non-manifold edges, flipped normals, open boundaries.</li>
-                  <li><strong>Repair/cleanup</strong>: common “one click” fixes and optimizations.</li>
-                  <li><strong>Conversions</strong>: STL/OBJ/GLTF (limitations noted in the repo).</li>
+                  <li><strong>Mesh viewer/inspector</strong>: 3D preview with stats and wireframe mode</li>
+                  <li><strong>Sanity checks</strong>: Detect non-manifold edges, flipped normals, open boundaries</li>
+                  <li><strong>Repair tools</strong>: One-click fixes for common mesh issues</li>
+                  <li><strong>File conversion</strong>: Convert between STL, OBJ, GLTF formats</li>
+                  <li><strong>Measurements</strong>: Distance, angle, and section analysis</li>
+                  <li><strong>Tolerance helper</strong>: Clearance recommendations for FDM/resin printing</li>
                 </ul>
               </div>
             </details>
           </article>
 
           <article class="card">
-            <h3 class="h3">How to run</h3>
-            <details class="accordion" open>
-              <summary>Development</summary>
+            <h3 class="h3">Tech details</h3>
+            <div class="keyValue">
+              <div class="k">Framework</div>
+              <div class="v">React + TypeScript</div>
+              <div class="k">Build tool</div>
+              <div class="v">Vite</div>
+              <div class="k">3D rendering</div>
+              <div class="v">Three.js + React Three Fiber</div>
+            </div>
+
+            <details class="accordion">
+              <summary>Setup instructions</summary>
               <div class="accordionBody">
+                <p><strong>Development:</strong></p>
                 <ol class="steps">
                   <li><code>npm install</code></li>
                   <li><code>npm run dev</code></li>
                 </ol>
-              </div>
-            </details>
-
-            <details class="accordion">
-              <summary>Build for production</summary>
-              <div class="accordionBody">
+                <p><strong>Production build:</strong></p>
                 <ol class="steps">
                   <li><code>npm run build</code></li>
-                  <li>Deploy the generated <code>dist</code> output.</li>
+                  <li>Deploy the <code>dist</code> folder</li>
                 </ol>
-                <p class="muted">
-                  For GitHub Pages deployments, the repo’s docs mention setting the Vite base path
-                  to the repo name if needed.
-                </p>
               </div>
             </details>
-
           </article>
         </div>
 
@@ -497,111 +400,70 @@
         aria-label="Pomfret Observatory / N.I.N.A."
       >
         <div class="sectionHead">
-          <h2 class="h2">Pomfret Observatory / N.I.N.A. Automation Milestone</h2>
+          <h2 class="h2">Observatory Automation</h2>
           <p class="sub">
-            A short timeline of a real integration effort: I started the N.I.N.A. connection work,
-            hit major blockers, someone else took over for a while, and now the system is running and
-            I’m rejoining for the next steps toward automated remote operation.
+            Ongoing work connecting N.I.N.A. (Nighttime Imaging 'N' Astronomy) to the Pomfret Observatory
+            for remote automated astrophotography.
           </p>
         </div>
 
         <div class="grid2">
           <article class="card">
-            <h3 class="h3">Timeline</h3>
+            <h3 class="h3">Project timeline</h3>
             <ol class="timeline" aria-label="Milestones timeline">
               <li class="timelineItem">
                 <div class="tDot" aria-hidden="true"></div>
                 <div class="tBody">
-                  <div class="tTitle">Kickoff: initial N.I.N.A. ↔ observatory connection effort</div>
+                  <div class="tTitle">Initial connection attempt</div>
                   <div class="tDesc">
-                    I began the process of connecting N.I.N.A. to the Pomfret Observatory hardware/software stack.
+                    Started connecting N.I.N.A. to the observatory hardware (mount, camera, dome, focuser, filter wheel).
                   </div>
                 </div>
               </li>
               <li class="timelineItem">
                 <div class="tDot" aria-hidden="true"></div>
                 <div class="tBody">
-                  <div class="tTitle">Blockers: real-world integration issues</div>
+                  <div class="tTitle">Integration challenges</div>
                   <div class="tDesc">
-                    I ran into multiple issues typical of observatory integration work (port/driver conflicts,
-                    mismatched site settings, and intermittent device connectivity).
+                    Encountered port conflicts, driver issues, settings mismatches, and intermittent device connectivity—typical of real observatory integration work.
                   </div>
                 </div>
               </li>
               <li class="timelineItem">
                 <div class="tDot" aria-hidden="true"></div>
                 <div class="tBody">
-                  <div class="tTitle">Handoff period</div>
+                  <div class="tTitle">Collaborative handoff</div>
                   <div class="tDesc">
-                    Another person took over the project for a while and pushed it forward.
+                    Another team member took over and resolved the blocking issues.
                   </div>
                 </div>
               </li>
               <li class="timelineItem">
                 <div class="tDot" aria-hidden="true"></div>
                 <div class="tBody">
-                  <div class="tTitle">Now: running + ready for the next phase</div>
+                  <div class="tTitle">Current: Automation phase</div>
                   <div class="tDesc">
-                    The system is now operating, and I’m joining back in to drive the next steps: automation and remote operation.
+                    System is now stable and operational. Rejoining to implement automated sequencing for unattended remote operation.
                   </div>
                 </div>
               </li>
             </ol>
 
             <details class="accordion">
-              <summary>Remote automation & N.I.N.A. sequencers</summary>
+              <summary>Automation approach</summary>
               <div class="accordionBody">
-                <p>
-                  Working on implementing remote automation using N.I.N.A.'s powerful sequencing system:
-                </p>
+                <p>Using N.I.N.A.'s sequencer system for reliable remote operation:</p>
                 <ul class="bullet">
                   <li>
-                    <strong>Basic Sequencer</strong>: Simple sequential instruction lists for straightforward imaging runs. 
-                    Good for single-target sessions with standard procedures.
+                    <strong>Basic Sequencer</strong>: Simple sequential instructions for single-target sessions
                   </li>
                   <li>
-                    <strong>Advanced Sequencer</strong>: Complex conditional logic, triggers, and parallel operations. 
-                    Enables smart automation with conditions (weather checks, altitude limits, time-based actions), 
-                    loop structures, and error recovery paths for unattended remote operation.
+                    <strong>Advanced Sequencer</strong>: Conditional logic, triggers, loops, error recovery—essential for unattended operation
                   </li>
                   <li>
-                    <strong>Remote operation goals</strong>: Reliable startup/shutdown procedures, automated target selection, 
-                    safety monitoring, and recovery from common failures—all essential for running the observatory remotely.
+                    <strong>Safety procedures</strong>: Automated startup/shutdown, weather monitoring, altitude limits, failure recovery
                   </li>
                 </ul>
-              </div>
-            </details>
-
-            <details class="accordion">
-              <summary>What "next steps" means (automation)</summary>
-              <div class="accordionBody">
-                <ul class="bullet">
-                  <li><strong>Reliability</strong>: keep connections stable over long sessions.</li>
-                  <li><strong>Procedures</strong>: startup/shutdown checklists translated into automation.</li>
-                  <li><strong>Safety mindset</strong>: remote operation should fail safe and be recoverable.</li>
-                  <li><strong>Scheduling</strong>: repeatable imaging plans and unattended runs.</li>
-                </ul>
-              </div>
-            </details>
-
-            <details class="accordion">
-              <summary>Concrete “PDF snapshot” highlights (what I was dealing with)</summary>
-              <div class="accordionBody">
-                <ul class="bullet">
-                  <li>
-                    <strong>Connection failures</strong>: “Could not open communications port… Error = 201.”
-                  </li>
-                  <li>
-                    <strong>Settings drift</strong>: N.I.N.A. prompting to synchronize site settings (lat/long/elevation mismatch).
-                  </li>
-                  <li><strong>Mixed stability</strong>: “Telescope connected”, “Dome connected”, then “Focuser connection lost”.</li>
-                  <li>
-                    <strong>Real integration complexity</strong>: multiple devices (mount, camera, dome, focuser, filter wheel) and drivers.
-                  </li>
-                </ul>
-                <p class="muted">
-                  The point of including this: even “simple” automation depends on reliable low-level connectivity and consistent configuration.
-                </p>
               </div>
             </details>
           </article>
@@ -609,56 +471,24 @@
           <article class="card">
             <h3 class="h3">What this demonstrates</h3>
             <ul class="bullet">
-              <li><strong>Debugging</strong>: diagnosing failures across software + hardware boundaries.</li>
-              <li><strong>Systems integration</strong>: coordinating drivers, settings, and real devices.</li>
-              <li><strong>Collaboration</strong>: a handoff happened, the project progressed, and I’m returning to continue it.</li>
-              <li><strong>Documentation</strong>: turning experience into a clear narrative and plan.</li>
+              <li><strong>Systems integration</strong>: Coordinating multiple hardware devices through software drivers</li>
+              <li><strong>Debugging</strong>: Diagnosing failures across hardware/software boundaries</li>
+              <li><strong>Collaboration</strong>: Working through handoffs and continuing complex projects</li>
+              <li><strong>Automation design</strong>: Building reliable procedures for unattended operation</li>
             </ul>
 
-<details class="accordion">
-              <summary>System elements (high-level)</summary>
+            <details class="accordion">
+              <summary>Technical challenges encountered</summary>
               <div class="accordionBody">
                 <ul class="bullet">
-                  <li><strong>Orchestrator</strong>: N.I.N.A. (imaging session control)</li>
-                  <li><strong>Mount control</strong>: TheSky / driver layer (mount not always recognized when ports are busy)</li>
-                  <li><strong>Devices</strong>: mount, dome, focuser, camera/filter wheel (each can fail independently)</li>
+                  <li><strong>Port conflicts</strong>: "Could not open communications port… Error = 201"</li>
+                  <li><strong>Settings drift</strong>: Lat/long/elevation mismatches between systems</li>
+                  <li><strong>Intermittent connectivity</strong>: Devices connecting/disconnecting unpredictably</li>
+                  <li><strong>Multi-device coordination</strong>: Managing mount, camera, dome, focuser, filter wheel simultaneously</li>
                 </ul>
-                <p class="muted">
-                  This is intentionally high-level (no sensitive remote-access details), focused on what I learned from the integration.
-                </p>
               </div>
             </details>
           </article>
-        </div>
-      </section>
-
-      <section class="container section" aria-label="Links">
-        <div class="sectionHead">
-          <h2 class="h2">Links</h2>
-        </div>
-
-        <div class="linkGrid">
-          <a class="linkCard" href="https://github.com/BubNugs-Coding/SantaSurvival" target="_blank" rel="noreferrer">
-            <div class="linkTitle">SantaSurvival</div>
-            <div class="linkMeta">GitHub repo</div>
-          </a>
-          <a
-            class="linkCard"
-            href="https://github.com/BubNugs-Coding/PixInsightScripts-BubNugs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="linkTitle">PixInsightScripts-BubNugs</div>
-            <div class="linkMeta">GitHub repo</div>
-          </a>
-          <a class="linkCard" href="https://github.com/BubNugs-Coding/3DWizard" target="_blank" rel="noreferrer">
-            <div class="linkTitle">3DWizard</div>
-            <div class="linkMeta">GitHub repo</div>
-          </a>
-          <a class="linkCard" href="https://github.com/BubNugs-Coding/WinterShowcase" target="_blank" rel="noreferrer">
-            <div class="linkTitle">WinterShowcase</div>
-            <div class="linkMeta">Showcase repo</div>
-          </a>
         </div>
       </section>
     </main>
@@ -666,8 +496,8 @@
     <footer class="footer" role="contentinfo">
       <div class="container footerInner">
         <div class="footerLeft">
-          <div class="footerTitle">Winter Showcase</div>
-          <div class="footerSub">Built as a static site for GitHub Pages.</div>
+          <div class="footerTitle">Project Showcase</div>
+          <div class="footerSub">A collection of programming projects by Avery Bird</div>
         </div>
         <div class="footerRight">
           <a class="footerLink" href="#main">Back to top</a>
