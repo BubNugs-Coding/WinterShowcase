@@ -31,10 +31,11 @@
         </div>
 
         <nav class="nav" aria-label="Primary">
+          <a class="navLink" href="#tidebreak">Tidebreak</a>
           <a class="navLink" href="#santa">SantaSurvival</a>
-          <a class="navLink" href="#pixinsight">PixInsight</a>
           <a class="navLink" href="#3dwizard">3DWizard</a>
-          <a class="navLink" href="#observatory">Observatory / N.I.N.A.</a>
+          <a class="navLink" href="#pixinsight">PixInsight</a>
+          <a class="navLink" href="#observatory">Observatory</a>
         </nav>
 
         <div class="topbarActions">
@@ -57,9 +58,9 @@
           <div class="heroText">
             <h1 class="h1">Project Showcase</h1>
             <p class="lead">
-              A collection of my projects: a Phaser web game (<span class="mono">SantaSurvival</span>),
-              a PixInsight automation script (<span class="mono">LRGB Wizard</span>), 
-              a 3D printing toolkit (<span class="mono">3DWizard</span>), and ongoing work
+              A collection of my projects: survival/crafting games (<span class="mono">Tidebreak</span>, <span class="mono">SantaSurvival</span>),
+              a 3D printing toolkit (<span class="mono">3DWizard</span>), 
+              a PixInsight automation script (<span class="mono">LRGB Wizard</span>), and ongoing work
               automating the Pomfret Observatory with <span class="mono">N.I.N.A.</span>
             </p>
 
@@ -89,6 +90,14 @@
           </div>
 
           <div class="heroCards" aria-label="Project overview cards">
+            <article class="miniCard" data-tags="game">
+              <div class="miniTitle">Tidebreak</div>
+              <div class="miniDesc">A survival/crafting game with grid-based inventory, resource gathering, and item crafting.</div>
+              <div class="miniLinks">
+                <a class="miniLink" href="#tidebreak">Details</a>
+              </div>
+            </article>
+
             <article class="miniCard" data-tags="game">
               <div class="miniTitle">SantaSurvival</div>
               <div class="miniDesc">A Phaser side-scroller with a Firebase name-only leaderboard.</div>
@@ -142,6 +151,86 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="container section anchorTarget" id="tidebreak" data-tags="game" aria-label="Tidebreak">
+        <div class="sectionHead">
+          <h2 class="h2">Tidebreak</h2>
+        </div>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="h3">Overview</h3>
+            <p>
+              A survival/crafting game built in Godot 4.5.1 featuring a grid-based inventory system,
+              resource gathering, item crafting, and equipment management. Survive on an island by collecting
+              resources, crafting tools, and managing your stats.
+            </p>
+
+            <ul class="bullet">
+              <li><strong>Grid inventory</strong>: Tetris-style 8×6 inventory with rotatable items and container storage.</li>
+              <li><strong>Crafting system</strong>: Drag-and-drop crafting with tool durability and multi-output recipes.</li>
+              <li><strong>Resource gathering</strong>: Berry bushes, water sources, and driftwood piles with cooldowns.</li>
+              <li><strong>Equipment</strong>: Backpacks, belts, and sashes that expand inventory and hotbar slots.</li>
+              <li><strong>Survival stats</strong>: Manage Health, Hunger, Thirst, and Energy through consumables.</li>
+            </ul>
+
+            <details class="accordion">
+              <summary>Game features</summary>
+              <div class="accordionBody">
+                <ul class="bullet">
+                  <li><strong>25 unique items</strong>: Consumables, materials, tools, containers, and wearables</li>
+                  <li><strong>Crafting recipes</strong>: Branch + rock → stick, cloth + cloth → rope, and more</li>
+                  <li><strong>Tool durability</strong>: Tools take damage when used but aren't consumed</li>
+                  <li><strong>Storage containers</strong>: Crates (5×5 grid) and chests (10×5 grid)</li>
+                  <li><strong>Wearable equipment</strong>: Backpacks add 4×6 internal storage</li>
+                  <li><strong>Resource cooldowns</strong>: Berries (90s), water (5s), driftwood (5 uses)</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <h3 class="h3">Tech details</h3>
+            <div class="keyValue">
+              <div class="k">Engine</div>
+              <div class="v">Godot 4.5.1</div>
+              <div class="k">Language</div>
+              <div class="v">GDScript</div>
+              <div class="k">Genre</div>
+              <div class="v">Survival / Crafting</div>
+            </div>
+
+            <details class="accordion">
+              <summary>Key systems</summary>
+              <div class="accordionBody">
+                <ul class="bullet">
+                  <li><strong>Inventory system</strong>: Custom grid-based placement with rotation, drag-drop, and overflow handling</li>
+                  <li><strong>Crafting engine</strong>: Recipe validation, tool durability tracking, multi-output handling</li>
+                  <li><strong>Gathering system</strong>: Resource nodes with cooldowns and visual feedback</li>
+                  <li><strong>Stat management</strong>: Real-time hunger/thirst/energy decay with consumable effects</li>
+                  <li><strong>Storage system</strong>: Container interaction with range enforcement and quick-transfer (Shift+Click)</li>
+                  <li><strong>Save/load</strong>: Persistent inventory, stats, and world state across sessions</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="accordion">
+              <summary>Controls</summary>
+              <div class="accordionBody">
+                <ul class="bullet">
+                  <li><strong>WASD/Arrows</strong>: Movement</li>
+                  <li><strong>I</strong>: Toggle inventory</li>
+                  <li><strong>E</strong>: Pick up nearby items</li>
+                  <li><strong>Click</strong>: Gather resources / open containers</li>
+                  <li><strong>Drag</strong>: Move items / craft (drag item A onto B)</li>
+                  <li><strong>Right-click</strong>: Consume food/water</li>
+                  <li><strong>Shift+Click</strong>: Quick-transfer to/from storage</li>
+                </ul>
+              </div>
+            </details>
+          </article>
         </div>
       </section>
 
